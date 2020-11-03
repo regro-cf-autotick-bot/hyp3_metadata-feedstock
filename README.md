@@ -5,11 +5,9 @@ Home: https://github.com/ASFHyP3/hyp3-metadata-templates
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hyp3_metadata-feedstock/blob/master/LICENSE.txt)
 
 Summary: Package for generating HyP3 products' metadata
-
-
 
 Current build status
 ====================
