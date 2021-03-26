@@ -1,5 +1,5 @@
 {% set name = "hyp3_metadata" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58abc36926874891c937289cbe0f7f1242d6facd686ef307ac0c645485a3f481
+  sha256: 042759bd31e0d1f8e5a4e2ad88a8f7d938b97d5ebb22c2766fb62e122934cddb
 
 build:
   noarch: python
@@ -27,10 +27,13 @@ requirements:
     - jinja2
     - gdal
     - pillow
+    - python-dateutil
 
 test:
   imports:
     - hyp3_metadata
+  commands:
+    - python -m hyp3_metadata --help
 
 about:
   home: https://github.com/ASFHyP3/hyp3-metadata-templates
