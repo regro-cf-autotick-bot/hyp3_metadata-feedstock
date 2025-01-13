@@ -23,7 +23,7 @@ requirements:
     - wheel
   run:
     - python >={{ python_min }}
-    - importlib_metadata
+    - importlib-metadata
     - jinja2
     - gdal
     - pillow
